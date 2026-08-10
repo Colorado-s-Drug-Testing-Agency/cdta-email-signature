@@ -1,5 +1,8 @@
 # ✉️ CDTA Email Signature Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![JavaScript](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
+
 Welcome to the **Colorado's Drug Testing Agency (CDTA)** Email Signature Generator! This repository powers the static site hosted at `signature.coloradosdrugtestingagency.com` via Cloudflare Pages.
 
 It allows CDTA staff to instantly generate, customize, and copy perfectly formatted, highly-compatible HTML email signatures that render beautifully across all major email clients (Gmail, Outlook, Apple Mail).
@@ -29,6 +32,10 @@ If you need to make changes to the signatures:
    node build_signature.js
    ```
 3. Open `index.html` in your browser to verify changes!
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
