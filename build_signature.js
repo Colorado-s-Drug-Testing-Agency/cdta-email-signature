@@ -117,6 +117,11 @@ let signaturesHtml = config.brands.map((brand, index) => generateSignatureHTML(b
 
 signaturesHtml = signaturesHtml.replace(/>\s+</g, '><');
 
+const tabsHtml = config.brands.map((brand, index) => 
+  `<button class="tab-btn ${index === 0 ? 'active' : ''}" onclick="switchTab('${brand.id}', event)">${brand.tabLabel}</button>`
+).join('\n    ');
+
+template = template.replace('<!-- INJECT:TABS -->', tabsHtml);
 template = template.replace('<!-- INJECT:UI_PANEL -->', uiPanelHtml);
 template = template.replace('<!-- INJECT:SIGNATURES -->', signaturesHtml);
 

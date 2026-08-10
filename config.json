@@ -46,6 +46,45 @@
       "socials": [],
       "actionLinks": [],
       "vision": "<strong>Cleanse And Recover T.M.</strong><br>Thank you for allowing us to serve you!"
+    },
+    {
+      "id": "ramon",
+      "tabLabel": "RamonRios.net",
+      "logos": [
+        {
+          "src": "https://github.com/RamonRiosJr.png",
+          "width": "90",
+          "radius": "50%",
+          "border": "3px solid #3b82f6",
+          "margin": "0 auto"
+        }
+      ],
+      "name": "Ramon Rios Jr.",
+      "title": "Enterprise Systems Architect & Passionate Technologist",
+      "address": "Colorado's Drug Testing Agency<br>Tech Consultant",
+      "phones": [
+        {
+          "label": "Cell",
+          "number": "385-630-3100",
+          "id": "sig-phone-cell"
+        }
+      ],
+      "email": "ramonluisrios@yahoo.com",
+      "websites": [
+        {
+          "label": "W:",
+          "url": "https://RamonRios.NET",
+          "text": "RamonRios.NET"
+        },
+        {
+          "label": "GitHub:",
+          "url": "https://github.com/RamonRiosJr",
+          "text": "github.com/RamonRiosJr"
+        }
+      ],
+      "socials": [],
+      "actionLinks": [],
+      "vision": "Enterprise Cloud Architecture | Generative AI Ecosystems | Zero-Knowledge Systems"
     }
   ]
 }
