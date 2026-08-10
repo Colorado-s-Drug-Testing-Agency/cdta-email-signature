@@ -1,0 +1,9 @@
+{
+  "name": "cdta-email-signature",
+  "version": "1.0.0",
+  "description": "Email signature generator for CDTA",
+  "type": "module",
+  "scripts": {
+    "build": "node build_signature.js"
+  }
+}

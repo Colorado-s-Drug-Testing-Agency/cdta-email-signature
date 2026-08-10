@@ -1,0 +1,51 @@
+{
+  "brands": [
+    {
+      "id": "cdta",
+      "tabLabel": "CDTA",
+      "logos": [
+        {
+          "src": "https://www.coloradosdrugtestingagency.com/web/image/website/1/logo/Colorado%27s%20Drug%20Testing%20Agency?unique=0937a00",
+          "width": "120"
+        }
+      ],
+      "name": "Terry D. Montoya",
+      "title": "President",
+      "subtitle": "Colorado's Drug Testing Agency",
+      "address": "7475 W. 5th Ave., #209<br>Lakewood, CO 80226",
+      "phones": [
+        {
+          "label": "Cell Phone",
+          "number": "720-249-7222",
+          "id": "sig-phone-cell"
+        },
+        {
+          "label": "Line 1",
+          "number": "720-532-8434",
+          "id": "sig-phone-line1"
+        },
+        {
+          "label": "Emergency 24/7",
+          "number": "720-532-8436",
+          "id": "sig-phone-line2"
+        },
+        {
+          "label": "Fax",
+          "number": "720-531-3957",
+          "id": "sig-phone-fax"
+        }
+      ],
+      "email": "terry@coloradosdrugtestingagency.com",
+      "websites": [
+        {
+          "label": "W:",
+          "url": "https://www.coloradosdrugtestingagency.com",
+          "text": "coloradosdrugtestingagency.com"
+        }
+      ],
+      "socials": [],
+      "actionLinks": [],
+      "vision": "<strong>Cleanse And Recover T.M.</strong><br>Thank you for allowing us to serve you!"
+    }
+  ]
+}
