@@ -1,8 +1,8 @@
 {
   "brands": [
     {
-      "id": "cdta",
-      "tabLabel": "CDTA",
+      "id": "cdta-terry",
+      "tabLabel": "Terry (CDTA)",
       "logos": [
         {
           "src": "https://signature.coloradosdrugtestingagency.com/cdta_logo_var_2_1785436911040.png",
@@ -36,6 +36,110 @@
         }
       ],
       "email": "terry@coloradosdrugtestingagency.com",
+      "websites": [
+        {
+          "label": "W:",
+          "url": "https://www.coloradosdrugtestingagency.com",
+          "text": "coloradosdrugtestingagency.com"
+        },
+        {
+          "label": "Book:",
+          "url": "https://www.coloradosdrugtestingagency.com/intake",
+          "text": "Schedule Intake"
+        }
+      ],
+      "socials": [],
+      "actionLinks": [],
+      "vision": "<strong>Cleanse And Recover T.M.</strong><br>Thank you for allowing us to serve you!"
+    },
+    {
+      "id": "cdta-lexi",
+      "tabLabel": "Lexi (CDTA)",
+      "logos": [
+        {
+          "src": "https://signature.coloradosdrugtestingagency.com/cdta_logo_var_2_1785436911040.png",
+          "width": "120"
+        }
+      ],
+      "name": "Lexi",
+      "title": "Staff",
+      "subtitle": "Colorado's Drug Testing Agency",
+      "address": "7475 W. 5th Ave., #209<br>Lakewood, CO 80226",
+      "phones": [
+        {
+          "label": "Cell Phone",
+          "number": "720-249-7222",
+          "id": "sig-phone-cell"
+        },
+        {
+          "label": "Line 1",
+          "number": "720-532-8434",
+          "id": "sig-phone-line1"
+        },
+        {
+          "label": "Emergency 24/7",
+          "number": "720-532-8436",
+          "id": "sig-phone-line2"
+        },
+        {
+          "label": "Fax",
+          "number": "720-531-3957",
+          "id": "sig-phone-fax"
+        }
+      ],
+      "email": "lexi@coloradosdrugtestingagency.com",
+      "websites": [
+        {
+          "label": "W:",
+          "url": "https://www.coloradosdrugtestingagency.com",
+          "text": "coloradosdrugtestingagency.com"
+        },
+        {
+          "label": "Book:",
+          "url": "https://www.coloradosdrugtestingagency.com/intake",
+          "text": "Schedule Intake"
+        }
+      ],
+      "socials": [],
+      "actionLinks": [],
+      "vision": "<strong>Cleanse And Recover T.M.</strong><br>Thank you for allowing us to serve you!"
+    },
+    {
+      "id": "cdta-ramon",
+      "tabLabel": "Ramon (CDTA)",
+      "logos": [
+        {
+          "src": "https://signature.coloradosdrugtestingagency.com/cdta_logo_var_2_1785436911040.png",
+          "width": "120"
+        }
+      ],
+      "name": "Ramon Rios",
+      "title": "Systems Architect",
+      "subtitle": "Colorado's Drug Testing Agency",
+      "address": "7475 W. 5th Ave., #209<br>Lakewood, CO 80226",
+      "phones": [
+        {
+          "label": "Cell Phone",
+          "number": "385-630-3100",
+          "id": "sig-phone-cell"
+        },
+        {
+          "label": "Line 1",
+          "number": "720-532-8434",
+          "id": "sig-phone-line1"
+        },
+        {
+          "label": "Emergency 24/7",
+          "number": "720-532-8436",
+          "id": "sig-phone-line2"
+        },
+        {
+          "label": "Fax",
+          "number": "720-531-3957",
+          "id": "sig-phone-fax"
+        }
+      ],
+      "email": "ramon@coloradosdrugtestingagency.com",
       "websites": [
         {
           "label": "W:",
