@@ -75,7 +75,7 @@ function generateSignatureHTML(brand, index) {
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; max-width: 600px; line-height: 1.4; font-size: 13px; color: #1e293b; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
         <tr>
           <!-- Logo Cell -->
-          <td valign="top" align="center" width="130" style="width: 130px; min-width: 130px; padding-right: 20px; border-right: 2px solid #facc15;">
+          <td valign="middle" align="center" width="170" style="width: 170px; min-width: 170px; padding-right: 20px; border-right: 2px solid #facc15;">
             ${logosHtml}
           </td>
           
