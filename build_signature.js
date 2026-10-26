@@ -15,7 +15,8 @@ const UI_TOGGLES = [
   { id: 'sig-phone-cell', label: 'Cell Phone' },
   { id: 'sig-phone-line1', label: 'Line 1' },
   { id: 'sig-phone-line2', label: 'Emergency 24/7' },
-  { id: 'sig-phone-fax', label: 'Fax Line' }
+  { id: 'sig-phone-fax', label: 'Fax Line' },
+  { id: 'sig-hipaa-disclaimer', label: 'HIPAA & Privacy Notice' }
 ];
 
 function appendUTM(url, brandId) {
@@ -47,7 +48,7 @@ function generateSignatureHTML(brand, index) {
   const isActive = index === 0 ? 'active' : '';
   
   // Preset classes
-  const presetClasses = ['sig-phone-cell', 'sig-phone-line1', 'sig-phone-line2', 'sig-phone-fax']; 
+  const presetClasses = ['sig-phone-cell', 'sig-phone-line1', 'sig-phone-line2', 'sig-phone-fax', 'sig-hipaa-disclaimer']; 
 
   const logosHtml = brand.logos.map(logo => {
     let style = `display: block; margin: ${logo.margin || '0 auto'};`;
@@ -64,6 +65,15 @@ function generateSignatureHTML(brand, index) {
   const phonesHtml = (brand.phones || []).map(phone => 
     `<span class="${phone.id} ${!presetClasses.includes(phone.id) ? 'is-hidden' : ''}"><strong style="color: #0f172a;">${phone.label}:</strong> <a href="tel:${phone.number.replace(/-/g, '')}" style="color: inherit; text-decoration: none;">${phone.number}</a><br></span>`
   ).join('\n              ');
+
+  const disclaimerRowHtml = brand.disclaimer ? `
+        <tr class="sig-hipaa-disclaimer">
+          <td colspan="2" style="padding-top: 14px;">
+            <div style="border-top: 1px solid #cbd5e1; padding-top: 10px; font-size: 10.5px; line-height: 1.45; color: #64748b; text-align: justify;">
+              ${brand.disclaimer}
+            </div>
+          </td>
+        </tr>` : '';
 
   const presetJson = JSON.stringify(presetClasses);
 
@@ -102,7 +112,7 @@ function generateSignatureHTML(brand, index) {
               </p>
             </div>
           </td>
-        </tr>
+        </tr>${disclaimerRowHtml}
       </table>
       <!--[if mso]>
       </td></tr></table>
@@ -118,7 +128,7 @@ let signaturesHtml = config.brands.map((brand, index) => generateSignatureHTML(b
 signaturesHtml = signaturesHtml.replace(/>\s+</g, '><');
 
 const tabsHtml = config.brands.map((brand, index) => 
-  `<button class="tab-btn ${index === 0 ? 'active' : ''}" onclick="switchTab('${brand.id}', event)">${brand.tabLabel}</button>`
+  `<button class="tab-btn ${index === 0 ? 'active' : ''}" data-tab="${brand.id}" onclick="switchTab('${brand.id}', event)">${brand.tabLabel}</button>`
 ).join('\n    ');
 
 template = template.replace('<!-- INJECT:TABS -->', tabsHtml);

@@ -146,18 +146,21 @@
 </div>
 
 <script>
-  let currentSig = 'sig-cdta';
+  let currentSig = 'sig-cdta-terry';
 
   document.addEventListener('DOMContentLoaded', () => {
-    switchTab('cdta');
+    switchTab('cdta-terry');
   });
 
   function switchTab(tabId, event) {
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     document.querySelectorAll('.signature-wrapper').forEach(wrapper => wrapper.classList.remove('active'));
     
-    if(event) {
+    if (event && event.target) {
         event.target.classList.add('active');
+    } else {
+        const defaultBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`) || document.querySelector('.tab-btn');
+        if (defaultBtn) defaultBtn.classList.add('active');
     }
     
     currentSig = 'sig-' + tabId;
